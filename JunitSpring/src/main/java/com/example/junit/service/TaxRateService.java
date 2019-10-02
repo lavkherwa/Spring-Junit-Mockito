@@ -6,6 +6,11 @@ import org.springframework.stereotype.Component;
 public class TaxRateService {
 
 	public float getTaxRate(float income) {
+
+		if (income <= 0) {
+			throw new RuntimeException("income can't be less than 0");
+		}
+
 		if (income < 1000.00) {
 			return 10;
 		} else if (income < 5000) {

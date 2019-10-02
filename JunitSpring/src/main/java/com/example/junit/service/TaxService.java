@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class TaxService {
 
 	public String getTaxBracket(int income) {
+
 		if (income < 1000) {
 			return "LOW";
 		} else if (income < 5000) {
