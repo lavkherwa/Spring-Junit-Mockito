@@ -44,7 +44,8 @@ public class StaticResourcesTest {
 				.perform(get("/api/resource/image")//
 						.accept(MediaType.IMAGE_PNG_VALUE))//
 				.andExpect(status().isOk())//
-				.andExpect(content().contentType(MediaType.IMAGE_PNG_VALUE)).andExpect(content().bytes(content));
+				.andExpect(content().contentType(MediaType.IMAGE_PNG_VALUE))//
+				.andExpect(content().bytes(content));
 
 	}
 
