@@ -10,6 +10,7 @@ import org.mockito.Mockito;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
+//@ContextConfiguration(classes = { TaxServiceMock3.class })
 public class TaxServiceMockWithoutBeanTest4 {
 
 	private TaxServiceMock3 service;
@@ -19,7 +20,19 @@ public class TaxServiceMockWithoutBeanTest4 {
 	@Before
 	public void init() {
 
+		/*- Another way to mock, instead of using @MockBean 
+		 * 
+		 *  NOTE: You should remove any annotation with
+		 *  
+		 *        @ContextConfiguration
+		 *        @SpringBootTest  
+		 *        
+		 *        Because now we don't want spring application
+		 *        context to initialize the beans and rather we 
+		 *        do it ourself
+		 */
 		taxBracketService = mock(TaxRateService.class);
+
 		service = new TaxServiceMock3(taxBracketService);
 	}
 
