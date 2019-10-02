@@ -22,7 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  *        all the beans across application, If application is 
  *        large then it will be problematic
  *  
- *  So instead of using @SpringBootTest, we can use @ContextConfiguration
+ *  So, instead of using @SpringBootTest, we can use @ContextConfiguration
  *  to tell spring only load provided classes in the application context
  *  at a moment
  */
@@ -38,10 +38,13 @@ public class TaxServiceTestAutowire {
 
 	@Before
 	public void init() {
-		/*
+		/*-
 		 * Global @Autowire will take care as we are adding annotation
 		 * 
-		 * @SpringBootTest, @ContextConfiguration at class to tell spring to take care
+		 * @SpringBootTest 
+		 * @ContextConfiguration 
+		 * 
+		 * At class to tell spring to take care
 		 * of initializing the application context
 		 * 
 		 */

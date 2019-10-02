@@ -45,13 +45,13 @@ public class TaxServiceMockTest3 {
 		// When
 		Mockito.when(taxBracketService.getTaxRate(income)).thenReturn(new Float(20));
 
-		final float applicatbleTax = service.calculateTax(1000);
+		final float applicableTax = service.calculateTax(1000);
 
 		// Then
-		assertThat(applicatbleTax).isEqualTo(new Float(200));
+		assertThat(applicableTax).isEqualTo(new Float(200));
 	}
 
-	/*- Mockito is very powerful and you can do a lots
+	/*- Mockito is very powerful and you can do a lot
 	 * 
 	 *  Mockito.when(restaurantService.feedbaack(AdditionalMatchers.gt(value: 4))
 	 *         .thenReturn("excellent");
