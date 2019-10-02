@@ -9,5 +9,5 @@ Sample reference application for writing unit tests in spring application
 - Junit for RestController [Source Code Link](JunitSpring/src/test/java/com/example/junit/resource/StaticResourcesTest.java)
 
 ## Disabling annoying log when running tests
-- Create a new folder resources at src/test/resources
+- Create a new folder **resources** at src/test/**resources**
 - Add following file [logback-test.xml](JunitSpring/src/test/resources/logback-test.xml)
