@@ -1,4 +1,4 @@
-package com.example.junit;
+package com.example.junit.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.junit.Service.TaxBracketService;
-import com.example.junit.Service.TaxService2;
+import com.example.junit.service.TaxBracketService;
+import com.example.junit.service.TaxService2;
 
 @RunWith(SpringRunner.class)
 /*- 

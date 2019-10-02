@@ -1,4 +1,4 @@
-package com.example.junit;
+package com.example.junit.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -10,8 +10,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.junit.Service.TaxRateService;
-import com.example.junit.Service.TaxServiceMock3;
+import com.example.junit.service.TaxRateService;
+import com.example.junit.service.TaxServiceMock3;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { TaxServiceMock3.class })
