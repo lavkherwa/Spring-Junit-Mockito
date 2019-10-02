@@ -1,13 +1,15 @@
 package com.example.junit.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TaxServiceMock3 {
 
-	@Autowired
 	private TaxRateService taxRateService;
+
+	public TaxServiceMock3(TaxRateService taxRateService) {
+		this.taxRateService = taxRateService;
+	}
 
 	public float calculateTax(float income) {
 
