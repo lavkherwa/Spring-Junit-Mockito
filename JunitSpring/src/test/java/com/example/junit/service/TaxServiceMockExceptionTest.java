@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { TaxServiceMock3.class })
-public class TaxServiceMockExceptionTest5 {
+public class TaxServiceMockExceptionTest {
 
 	@Autowired
 	private TaxServiceMock3 service;

@@ -13,7 +13,7 @@ import com.example.junit.service.TaxBracketService;
 import com.example.junit.service.TaxService2;
 
 @RunWith(SpringRunner.class)
-public class TaxServiceTest2 {
+public class TaxService2Test {
 
 	private TaxService2 service;
 

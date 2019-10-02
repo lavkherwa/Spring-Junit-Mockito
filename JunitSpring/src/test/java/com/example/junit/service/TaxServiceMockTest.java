@@ -15,7 +15,7 @@ import com.example.junit.service.TaxServiceMock3;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { TaxServiceMock3.class })
-public class TaxServiceMockTest3 {
+public class TaxServiceMockTest {
 
 	@Autowired
 	private TaxServiceMock3 service;

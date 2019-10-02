@@ -27,7 +27,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  *  at a moment
  */
 @ContextConfiguration(classes = { TaxService2.class, TaxBracketService.class })
-public class TaxServiceTestAutowire {
+public class TaxServiceAutowireTest {
 
 	@Autowired
 	private TaxService2 service;

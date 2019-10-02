@@ -17,7 +17,7 @@ import com.example.junit.service.TaxServiceSpy4;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { TaxServiceSpy4.class })
-public class TaxServiceSpyTest4 {
+public class TaxServiceSpyTest {
 
 	/*
 	 * With spy bean we can choose which methods to return dummyResponse and which
