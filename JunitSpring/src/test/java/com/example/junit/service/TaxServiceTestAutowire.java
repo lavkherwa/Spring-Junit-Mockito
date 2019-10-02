@@ -11,9 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.junit.service.TaxBracketService;
-import com.example.junit.service.TaxService2;
-
 @RunWith(SpringRunner.class)
 /*- 
  * 
@@ -51,14 +48,14 @@ public class TaxServiceTestAutowire {
 	}
 
 	@Test
-	public void brackets() {
+	public void testGetTaxBracket() {
 		final String taxBracket = service.getTaxBracket(1000);
 
 		assertThat(taxBracket).isEqualTo("MEDIUM");
 	}
 
 	@Test
-	public void allBrackets() {
+	public void testAllTaxBrackets() {
 		final List<String> allTaxBrackets = service.allTaxBrackets();
 
 		assertThat(allTaxBrackets).isNotEmpty();

@@ -24,7 +24,7 @@ public class TaxServiceMockTest3 {
 	private TaxRateService taxBracketService;
 
 	@Test
-	public void calculateTax() {
+	public void testCalculateTax() {
 
 		/*- 
 		 * Below code will make the actual IO call to target when using 

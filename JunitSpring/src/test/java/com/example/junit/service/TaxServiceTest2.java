@@ -30,14 +30,14 @@ public class TaxServiceTest2 {
 	}
 
 	@Test
-	public void brackets() {
+	public void testGetTaxBracket() {
 		final String taxBracket = service.getTaxBracket(1000);
 
 		assertThat(taxBracket).isEqualTo("MEDIUM");
 	}
 
 	@Test
-	public void allBrackets() {
+	public void testAllTaxBrackets() {
 		final List<String> allTaxBrackets = service.allTaxBrackets();
 
 		assertThat(allTaxBrackets).isNotEmpty();

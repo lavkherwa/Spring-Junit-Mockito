@@ -30,7 +30,7 @@ public class TaxServiceSpyTest4 {
 	private TaxRateService taxRateService;
 
 	@Test
-	public void calculateTax() {
+	public void testCalculateTax() {
 
 		// Provided
 		float income = new Float(1000);
